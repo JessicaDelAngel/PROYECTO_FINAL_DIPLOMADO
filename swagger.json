@@ -1,0 +1,127 @@
+{
+    "openapi":"3.0.2",
+    "info": {
+        "title":"iDoctor - Novamedik",
+        "version":"1.0",
+        "description": "API para el servicio web de la aplicación iDoctor para Novamedik"
+    },
+    "servers": [
+        {"url":"https://novamedik.herokuapp.com"},
+        {"url":"http://localhost:8000"}
+    ],
+    "paths": {
+        "/api/login": {
+            "post": {
+                "tags": ["auth"],
+                "summary": "Autenticarse en el servicio",
+                "description": "Autenticarse en el servicio",
+                "operationId": "login",
+                "requestBody":{
+                    "description": "Datos del usuario a enviar",
+                    "required": true,
+                    "content": {
+                        "application/x-www-form-urlencoded": {
+                            "schema": {
+                                
+                            }
+                        }
+                    }
+                },
+                "responses": {
+                    "200": {
+                        "description": "Ingreso exitoso",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "type": "object",
+                                    "items": {
+                                        "$ref": "#/components/schemas/AuthResponse"
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    "403": {
+                        "description": "No se pudo entrar",
+                        "content": {
+                            "application/json": {
+                                
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/api/doctor": {
+            "post": {
+                "tags": ["admin"],
+                "summary": "Crear un nuevo doctor",
+                "responses": {
+                    "200": {
+                        "description": "Se creo un nuevo doctor",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "type": "object",
+                                    "items":{}
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            "get": {
+                "tags": ["admin"],
+                "summary": "Obtener los doctores",
+                "responses": {
+                    "200": {
+                        "description": "Los doctores registrados"
+                    }
+                }
+            }
+        }
+    },
+    "components": {
+        "schemas": {
+            "LoginBody": {
+                "type": "object",
+                "required": ["usuarioId", "contrasena"],
+                "properties": {
+                    "usuarioId": {
+                        "type": "string"
+                    },
+                    "contrasena": {
+                        "type": "string"
+                    }
+                }
+            },
+            "DatosUsuario": {},
+            "AuthResponse": {
+                "type": "object",
+                "properties": {
+                    "ok": {
+                        "type": "boolean",
+                        "default": true
+                    },
+                    "datos": {
+                        "type": "object"
+                    },
+                    "token": {
+                        "type": "string"
+                    }
+                }
+            },
+            "MessageResponse": {
+                "type": "object",
+                "properties": {
+                    "ok": {
+                        "type": "boolean"
+                    },
+                    "message": {
+                        "type": "string"
+                    }
+                }
+            }
+        }
+    }
+}

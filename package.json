@@ -1,0 +1,35 @@
+{
+  "name": "novamedik",
+  "version": "1.2.0",
+  "description": "Proyecto final del Diplomado de desarrollo de aplicaciones web",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js -e js,html,json,css,env"
+  },
+  "repository": {
+    "url": "https://gitlab.com/feguedi/novamedik.git",
+    "type": "git"
+  },
+  "keywords": [],
+  "author": "Jessica Karina Del Angel Calva",
+  "license": "ISC",
+  "homepage": "http://novamedik.herokuapp.com/",
+  "dependencies": {
+    "bcrypt": "^5.0.0",
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "jsonwebtoken": "^8.5.1",
+    "morgan": "^1.10.0",
+    "mysql": "^2.18.1",
+    "pdfjs": "^2.4.1",
+    "serve-favicon": "^2.5.0",
+    "underscore": "^1.11.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.4",
+    "swagger-ui-express": "^4.1.4"
+  }
+}
