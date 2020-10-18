@@ -1,0 +1,22 @@
+<svg width="156.25mm" height="156.25mm" version="1.1" viewBox="0 0 156.25 156.25" xmlns="http://www.w3.org/2000/svg">
+  <g transform="translate(-1.5054e-6 -157.71)">
+    <g transform="translate(0 -25.094)">
+      <g transform="matrix(.26458 0 0 .26458 0 180.78)">
+        <g fill="#fff">
+          <path d="m199 247.75v-17h88v-159h-239v159h88v17h-136v191.5h15v-176.5h352.43l15-15zm-98.606-161 21.796 21.796 10.606-10.606-11.19-11.19h150.39v97h-53.394l-69.822-69.822-10.606 10.606 59.216 59.216h-134.39v-97zm-37.394 112h209v17h-209zm88 32h33v17h-33z"/>
+          <path d="m303 343.75v-49h28.477v-15h-43.477v101.72z"/>
+          <rect x="367.5" y="223.75" width="112" height="15"/>
+          <rect x="367.5" y="199.75" width="112" height="15"/>
+          <rect x="367.5" y="175.75" width="96" height="15"/>
+        </g>
+      </g>
+      <g fill="#fff" shape-rendering="auto">
+        <path d="m116.23 242.04c-22.081 0-40.025 17.944-40.025 40.025 1e-6 22.081 17.944 40.023 40.025 40.023 22.081 0 40.023-17.942 40.023-40.023 0-22.081-17.942-40.025-40.023-40.025zm0 3.9688c19.937 0 36.055 16.12 36.055 36.057 0 19.937-16.118 36.055-36.055 36.055-19.937 0-36.057-16.118-36.057-36.055 6e-6 -19.937 16.12-36.057 36.057-36.057z" color="#000000" color-rendering="auto" dominant-baseline="auto" image-rendering="auto" solid-color="#000000" style="font-feature-settings:normal;font-variant-alternates:normal;font-variant-caps:normal;font-variant-ligatures:normal;font-variant-numeric:normal;font-variant-position:normal;isolation:auto;mix-blend-mode:normal;shape-padding:0;text-decoration-color:#000000;text-decoration-line:none;text-decoration-style:solid;text-indent:0;text-orientation:mixed;text-transform:none;white-space:normal"/>
+        <g transform="translate(163.47 -6.6146)">
+          <path d="m-47.277 258.32a1.9846 1.9846 0 0 0-1.9531 2.0117v56.697a1.9846 1.9846 0 1 0 3.9688 0v-56.697a1.9846 1.9846 0 0 0-2.0156-2.0117z" color="#000000" color-rendering="auto" dominant-baseline="auto" image-rendering="auto" solid-color="#000000" style="font-feature-settings:normal;font-variant-alternates:normal;font-variant-caps:normal;font-variant-ligatures:normal;font-variant-numeric:normal;font-variant-position:normal;isolation:auto;mix-blend-mode:normal;shape-padding:0;text-decoration-color:#000000;text-decoration-line:none;text-decoration-style:solid;text-indent:0;text-orientation:mixed;text-transform:none;white-space:normal"/>
+          <path d="m-75.596 286.7a1.9846 1.9846 0 1 0 0 3.9688h56.697a1.9846 1.9846 0 1 0 0-3.9688z" color="#000000" color-rendering="auto" dominant-baseline="auto" image-rendering="auto" solid-color="#000000" style="font-feature-settings:normal;font-variant-alternates:normal;font-variant-caps:normal;font-variant-ligatures:normal;font-variant-numeric:normal;font-variant-position:normal;isolation:auto;mix-blend-mode:normal;shape-padding:0;text-decoration-color:#000000;text-decoration-line:none;text-decoration-style:solid;text-indent:0;text-orientation:mixed;text-transform:none;white-space:normal"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

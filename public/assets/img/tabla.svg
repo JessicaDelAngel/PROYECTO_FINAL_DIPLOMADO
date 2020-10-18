@@ -1,0 +1,23 @@
+<svg enable-background="new 0 0 511 511" version="1.1" viewBox="0 0 511 511" xmlns="http://www.w3.org/2000/svg">
+  <g fill="#fff">
+    <path d="M343,56V32h-48.714C290.773,13.793,274.717,0,255.5,0s-35.273,13.793-38.786,32H168v24H72v455h367V56H343z M424,496H87V71   h81v16.5h15V47h48v-7.5c0-13.509,10.991-24.5,24.5-24.5S280,25.991,280,39.5V47h48v40.5h15V71h81V496z"/>
+    <rect x="247.5" y="32" width="16" height="15"/>
+    <path d="M104,479h303V88H104V479z M119,103h273v361H119V103z"/>
+    <rect x="231.5" y="136" width="128" height="15"/>
+    <rect x="151.5" y="136" width="63.998" height="15"/>
+    <rect x="303.5" y="176" width="55.997" height="15"/>
+    <rect x="151.5" y="176" width="136" height="15"/>
+    <rect x="199.5" y="216" width="160" height="15"/>
+    <rect x="151.5" y="216" width="32.002" height="15"/>
+    <rect x="271.5" y="256" width="88.003" height="15"/>
+    <rect x="151.5" y="256" width="104" height="15"/>
+    <rect x="319.5" y="296" width="39.997" height="15"/>
+    <rect x="151.5" y="296" width="152" height="15"/>
+    <rect x="223.5" y="336" width="136" height="15"/>
+    <rect x="151.5" y="336" width="55.997" height="15"/>
+    <rect x="287.5" y="376" width="72.002" height="15"/>
+    <rect x="151.5" y="376" width="120" height="15"/>
+    <rect x="199.5" y="416" width="160" height="15"/>
+    <rect x="151.5" y="416" width="32.002" height="15"/>
+  </g>
+</svg>

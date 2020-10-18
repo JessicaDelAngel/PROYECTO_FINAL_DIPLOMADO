@@ -1,0 +1,355 @@
+body {
+  background-color: #E3E7E8;
+}
+
+.login-clean {
+  background-image: url("/assets/img/hospital2.jpg");
+  opacity: 0.86;
+  background-size: cover;
+  filter: blur(0px) brightness(90%) contrast(110%) grayscale(1%) saturate(95%);
+}
+
+.sidebar {
+  height: 100%;
+  width: 52px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  padding-top: 60px;
+  transition: 0.5s;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
+}
+
+.sidebar a {
+  padding: 8px 8px 8px 8px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidebar a:hover {
+  color: #f1f1f1;
+  background-color: rgba(255, 255, 255, 0.05);
+}
+
+.sidebar a.current {
+  background-color: #CD5070;
+  color: #f1f1f1;
+}
+
+.sidebar a.current:hover {
+  background-color: #b94562 !important;
+}
+
+.sidebar #btn-close-sidebar {
+  position: absolute;
+  top: 0;
+  color: #f1f1f1;
+  right: 7px;
+  margin-left: 50px;
+}
+
+.sidebar #btn-close-sidebar:hover {
+  background-color: transparent !important;
+}
+
+.sidebar > a > h5 {
+  margin-left: 0.5rem;
+  opacity: 0;
+  min-width: 320px;
+}
+
+.sidebar-icon {
+  max-height: 35px;
+  max-width: 35px;
+  min-height: 35px;
+  min-width: 35px;
+  width: 100%;
+  height: auto;
+  background-size: 35px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  object-fit: cover;
+}
+
+.sidebar-icon-tubo {
+  background-image: url(/assets/img/tubo.svg);
+}
+.sidebar-icon-cama {
+  background-image: url(/assets/img/cama.svg);
+}
+.sidebar-icon-tabla {
+  background-image: url(/assets/img/tabla.svg);
+}
+.sidebar-icon-tabla-tubo {
+  background-image: url(/assets/img/tabla-tubo.svg);
+}
+.sidebar-icon-usuario {
+  background-image: url(/assets/img/usuario.svg);
+}
+.sidebar-icon-escritorio {
+  background-image: url(/assets/img/escritorio.svg);
+}
+.sidebar-icon-escritorio-plus {
+  background-image: url(/assets/img/escritorio-plus.svg);
+}
+
+#btn-open-sidebar:hover {
+  background-color: #444;
+}
+
+/* .sidebar:hover {
+  animation-name: sombraMenu;
+  animation-duration: 1s;
+  animation-iteration-count: 1;
+  animation-timing-function: linear;
+}
+
+@keyframes sombraMenu {
+  0% {
+    box-shadow: 0 0 0 rgba(0, 0, 0, 0);
+  }
+  100% {
+    box-shadow: 0.5rem 0rem 1rem rgba(0, 0, 0, 0.25);
+  }
+} */
+
+@media screen and (max-height: 450px) {
+  .sidebar {
+    padding-top: 48px;
+  }
+  #btn-close-sidebar {
+    top: 6px;
+  }
+}
+
+@media screen and (max-height: 450px) {
+  .sidebar a {
+    font-size: 18px;
+  }
+}
+
+.row.row-content {
+  background-color: #ffffff;
+}
+
+.examen-datos,
+.list-group-item>p {
+  margin: 0;
+}
+
+.login-clean {
+  height: 100vh;
+}
+
+.card-habitacion,
+.card-area {
+  margin: 0;
+  padding: 0;
+}
+
+.card-footer.card-footer-historial {
+  padding-top: 0;
+  padding-bottom: 0.75rem;
+  background-color: rgba(255, 255, 255, 0);
+}
+
+#card-nueva-habitacion,
+#card-nueva-consulta,
+#card-nuevo-consultorio {
+  opacity: 0.32;
+  background-color: #cccccc;
+}
+
+#card-nueva-habitacion:hover,
+#card-nueva-consulta:hover,
+#card-nuevo-consultorio:hover {
+  box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.15) !important;
+}
+
+.icon-nueva-habitacion,
+.icon-nueva-consulta,
+.icon-nuevo-consultorio {
+  width: 100%;
+  /*max-height: 40%;*/
+  /*min-height: 3rem;*/
+}
+
+.card-consulta-info>.col>p {
+  margin: 0;
+  padding: 0;
+}
+
+.navbar {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.nav-item {
+  background-color: #2D86C0 !important;
+}
+
+.nav-item:hover {
+  background-color: #256D9F !important;
+}
+
+#navcol-1>ul>li>div>a:hover {
+  color: #060606;
+}
+
+.badge.badge-pdf,
+.btn.btn-submit,
+.btn.btn-historial,
+.btn.btn-editar {
+  background-color: #CD5070;
+  color: #fafafa;
+  border-color: transparent;
+  text-transform: uppercase;
+}
+
+button.btn-submit {
+  margin-top: 0.5rem;
+}
+
+a.btn-submit:focus,
+a.btn-submit:active,
+a.btn-submit:hover,
+button.btn-submit:focus,
+button.btn-submit:active,
+button.btn-submit:hover {
+  background-color: #C83D61;
+  color: #fafafa;
+  border-color: transparent;
+  text-transform: uppercase;
+}
+
+.spinner-grow {
+  color: #CD5070;
+}
+
+.h-content {
+  font-weight: 400;
+}
+
+.card.card-paciente,
+.card.card-consultorio,
+.col.col-content,
+.col-12.col-content {
+  background-color: #eef2f3;
+  border-radius: 4px;
+}
+
+#card-nuevo-consultorio > div > i,
+#card-nuevo-consultorio > div > i:hover,
+#card-nuevo-consultorio > h4,
+#card-nuevo-consultorio > h4:hover {
+  text-decoration: none !important;
+  color: #060606;
+}
+
+.col-content>form>.form-row>.row>.col>.form-control {
+  background-color: #fafafa;
+}
+
+#icon-cargando {
+  animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+textarea,
+textarea.form-control,
+input.form-control,
+input[type=text],
+input[type=password],
+input[type=email],
+input[type=number],
+[type=text].form-control,
+[type=password].form-control,
+[type=email].form-control,
+[type=tel].form-control,
+[contenteditable].form-control {
+  background-color: #FAFAFA;
+  padding-left: 8px;
+  padding-right: 8px;
+}
+
+textarea:focus,
+textarea.form-control:focus,
+input.form-control:focus,
+input[type=text]:focus,
+input[type=password]:focus,
+input[type=email]:focus,
+input[type=number]:focus,
+[type=text].form-control:focus,
+[type=password].form-control:focus,
+[type=email].form-control:focus,
+[type=tel].form-control,
+[contenteditable].form-control:focus {
+  background-color: #FAFAFA;
+  padding-left: 8px;
+  padding-right: 8px;
+}
+
+.form-check-label {
+  font-weight: 500;
+}
+
+label {
+  margin-left: 5px;
+}
+
+.dropdown-menu,
+.dropdown-menu>button.dropdown-item,
+.navbar-expand-md .navbar-nav .dropdown-menu {
+  background-color: #2D3E50 !important;
+  color: #fafafa !important;
+}
+
+.dropdown-menu>.dropdown-item[role="presentation"] {
+  color: #fafafa;
+  cursor: pointer;
+}
+
+.dropdown-menu.dropdown-item:hover {
+  color: #060606;
+}
+
+button.dropdown-item:hover {
+  color: #060606 !important;
+  background-color: #fafafa !important;
+}
+
+#btn-areas-borrar {
+  float: right;
+  position: absolute;
+  z-index: 10;
+  right: 10px;
+  top: 35px;
+}
+
+.list-group-item > a {
+  text-decoration: none;
+  color: #060606;
+}
+
+.card, .card-footer {
+  border: transparent !important;
+}
+
+li#descargar {
+  cursor: pointer;
+}
