@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>iDoctor - Mis datos</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700">
+    <link rel="stylesheet" href="/assets/fonts/fontawesome-all.min.css">
+    <link rel="stylesheet" href="/assets/fonts/font-awesome.min.css">
+    <link rel="stylesheet" href="/assets/css/Navigation-Clean.css">
+    <link rel="stylesheet" href="/assets/css/styles.css">
+</head>
+
+<body>
+    <main id="main" class="h-100">
+        <!-- Start: Navigation Clean -->
+        <div>
+            <nav class="navbar navbar-light navbar-expand-md navigation-clean" style="background-color: #3598DB;">
+                <div class="container">
+                    <a class="navbar-brand" style="color: #fafafa;">iDoctor</a>
+                    <button class="navbar-toggler" data-toggle="collapse" data-target="#navcol-1">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="navbar-toggler-icon text-white-50"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navcol-1">
+                        <ul class="nav navbar-nav ml-auto">
+                            <li class="dropdown nav-item">
+                                <a class="dropdown-toggle nav-link" data-toggle="dropdown" aria-expanded="false">
+                                    <img src="/assets/img/doctorhombre-final.png" width="32px">
+                                </a>
+                                <div class="dropdown-menu dropdown-menu-right" role="menu">
+                                    <a class="dropdown-item" href="/mis-datos.html" role="presentation">Mis datos</a>
+                                    <a class="dropdown-item" role="presentation" id="btn-cerrar-sesion">Cerrar sesión</a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <!-- End: Navigation Clean -->
+        <main class="h-100">
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <ol class="breadcrumb mb-0" style="background-color: rgba(255,255,255,0);">
+                            <li class="breadcrumb-item">
+                                <a href="/">
+                                    <span>
+                                        <i class="fa fa-medkit fa-2x" style="color: #CD5070;"></i>
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="breadcrumb-item text-uppercase d-inline-flex align-items-center">
+                                <a>
+                                    <h4 class="mb-0">mis datos</h4><span></span>
+                                </a>
+                            </li>
+                            <li class="breadcrumb-item active text-uppercase d-inline-flex align-items-center">
+                                <h4 id="id-usuario" class="mb-0">Id usuario</h4><span></span>
+                            </li>
+                        </ol>
+                        <div class="row my-0 mx-1 p-2 row-content">
+                            <div class="col p-2 col-content">
+                                <h4>Datos personales</h4>
+                                <div class="row">
+                                    <div class="col-6">
+                                        <h5>Nombre</h5>
+                                        <p id="nombre-usuario"></p>
+                                    </div>
+                                    <div class="col-6">
+                                        <h5>Rol</h5>
+                                        <p id="rol-usuario"></p>
+                                    </div>
+                                    <div class="col-12">
+                                        <hr />
+                                    </div>
+                                </div>
+                                <h4>Cambiar contraseña</h4>
+                                <form id="cambiar-contrasena">
+                                    <div class="form-row">
+                                        <div class="col-12">
+                                            <label for="contrasena">Nueva contraseña</label>
+                                            <input type="password" name="contrasena" placeholder="Nueva contraseña" required class="bg-white border rounded border-white shadow-sm form-control p-2" />
+                                        </div>
+                                        <div class="col-12 d-flex justify-content-center align-items-center mt-2">
+                                            <button class="btn btn-outline-primary btn-submit" type="submit">Cambiar</button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <main style="position: absolute; bottom: 3rem; z-index: 10; width: 100%;">
+            <div class="container">
+                <div class="row d-flex justify-content-center">
+                    <div class="col col-12 col-md-4 text-center">
+                        <div id="mensaje"></div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </main>
+    <div id="menu-sidebar" class="sidebar"></div>
+    <script src="/assets/js/jquery.min.js"></script>
+    <script src="/assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="/assets/js/bootstrap-4-autocomplete.min.js"></script>
+    <script src="/assets/js/main.js"></script>
+    <script src="/assets/js/switch.js"></script>
+    <script src="/assets/js/sidebar.js"></script>
+    <script src="/assets/js/mis-datos.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="es-MX">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>iDoctor</title>
+    <link rel="stylesheet" href="/assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700">
+    <link rel="stylesheet" href="/assets/fonts/fontawesome-all.min.css">
+    <link rel="stylesheet" href="/assets/fonts/font-awesome.min.css">
+    <link rel="stylesheet" href="/assets/css/Navigation-Clean.css">
+    <link rel="stylesheet" href="/assets/css/styles.css">
+</head>
+
+<body>
+    <!-- Start: Navigation Clean -->
+    <div>
+        <nav class="navbar navbar-light navbar-expand-md navigation-clean" style="background-color: #3598DB;">
+            <div class="container">
+                <a class="navbar-brand" href="/" style="color: #fafafa;">iDoctor</a>
+                <button class="navbar-toggler" data-toggle="collapse" data-target="#navcol-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="navbar-toggler-icon text-white-50"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navcol-1">
+                    <ul class="nav navbar-nav ml-auto">
+                        <li class="dropdown nav-item">
+                            <a class="dropdown-toggle nav-link" data-toggle="dropdown" aria-expanded="false">
+                                <img src="/assets/img/doctorhombre-final.png" width="32px">
+                            </a>
+                            <div class="dropdown-menu dropdown-menu-right" role="menu">
+                                <a class="dropdown-item" href="/mis-datos.html" role="presentation">Mis datos</a>
+                                <a class="dropdown-item" role="presentation" id="btn-cerrar-sesion">Cerrar sesión</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <!-- End: Navigation Clean -->
+    <main class="h-100">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <ol class="breadcrumb mb-0" style="background-color: rgba(255,255,255,0);">
+                        <li class="breadcrumb-item">
+                            <a href="/"><span><i class="fa fa-medkit fa-2x" style="color: #CD5070;"></i></span></a>
+                        </li>
+                        <li class="breadcrumb-item text-uppercase d-inline-flex align-items-center">
+                            <a href="/pacientes" style="text-decoration: none;" class="text-dark">
+                                <h4 class="mb-0">Pacientes registrados</h4><span></span>
+                            </a>
+                        </li>
+                        <li class="breadcrumb-item text-uppercase d-inline-flex align-items-center active">
+                            <a>
+                                <h4 class="mb-0">Nuevo paciente</h4><span></span>
+                            </a>
+                        </li>
+                    </ol>
+                    <div class="row my-0 mx-1 p-2 row-content">
+                        <div class="col p-2 col-content">
+                            <h4>Datos del paciente</h4>
+                            <form id="form-nuevo-paciente">
+                                <div class="form-row">
+                                    <div class="col-12 col-md-4">
+                                        <label for="nombres">Nombres</label>
+                                        <input class="border rounded border-white shadow-sm form-control p-2" type="text" name="nombres" required placeholder="Nombres">
+                                    </div>
+                                    <div class="col-12 col-md-4">
+                                        <label for="apellidos">Apellidos</label>
+                                        <input class="border rounded border-white shadow-sm form-control p-2" type="text" name="apellidos" required placeholder="Apellidos">
+                                    </div>
+                                    <div class="col-12 col-md-4">
+                                        <label for="curp">CURP</label>
+                                        <input class="border rounded border-white shadow-sm form-control p-2" type="text" name="curp" required placeholder="CURP">
+                                    </div>
+                                    <div class="col-12 col-md-4">
+                                        <label for="fechaNacimiento">Fecha de nacimiento</label>
+                                        <input name="fechaNacimiento" class="border rounded border-white shadow-sm form-control p-2" type="date" required>
+                                    </div>
+                                    <div class="col-12 col-md-4">
+                                        <label for="lugarNacimiento">Lugar de nacimiento</label>
+                                        <input class="border rounded border-white shadow-sm form-control p-2" type="text" name="lugarNacimiento" required placeholder="Lugar de nacimiento">
+                                    </div>
+                                    <div class="col-12 col-md-4">
+                                        <div class="form-row">
+                                            <div class="col-6 d-flex flex-column">
+                                                <label for="sexo">Sexo</label>
+                                                <div class="form-check d-lg-flex align-items-lg-center">
+                                                    <input class="form-check-input my-0" type="radio" name="sexo" value="m" id="formCheck-1">
+                                                    <label class="form-check-label" for="formCheck-1">Hombre</label>
+                                                </div>
+                                                <div class="form-check d-inline-flex align-content-center align-items-lg-center">
+                                                    <input class="form-check-input my-0" type="radio" name="sexo" value="f" id="formCheck">
+                                                    <label class="form-check-label" for="formCheck">Mujer</label>
+                                                </div>
+                                            </div>
+                                            <div class="col-6">
+                                                <label for="grupoSanguineo">Grupo sanguineo</label>
+                                                <input class="border rounded border-white shadow-sm form-control p-2" type="text" name="grupoSanguineo" required placeholder="Grupo sanguineo">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-md-4">
+                                        <label>Estado civil</label>
+                                        <input class="border rounded border-white shadow-sm form-control" type="text" name="estadoCivil" placeholder="Estado civil">
+                                    </div>
+                                    <div class="col-12 col-md-4">
+                                        <label for="telefono">Teléfono</label>
+                                        <input class="bg-white border rounded border-white shadow-sm form-control p-2" type="number" name="telefono" required placeholder="Teléfono" min="1000000000" max="9999999999">
+                                    </div>
+                                    <div class="col-12 col-md-4">
+                                        <label for="email">Correo electrónico</label>
+                                        <input class="border rounded border-white shadow-sm form-control" type="text" name="email" placeholder="Correo electrónico" inputmode="email">
+                                    </div>
+                                    <div class="col col-12">
+                                        <label for="direccion">Domicilio</label>
+                                        <input class="bg-white border rounded border-white shadow-sm form-control p-2" type="text" name="direccion" required placeholder="Domicilio">
+                                    </div>
+                                    <div class="col-12">
+                                        <hr style="color: #060606;">
+                                    </div>
+                                    <div class="col-12">
+                                        <h4>Historia clínica</h4>
+                                    </div>
+                                    <div class="col-12 col-md-6">
+                                        <label for="antecedentes">Antecedentes personales patológicos</label>
+                                        <textarea class="border rounded border-white shadow-sm form-control p-2" rows="4" wrap="hard" name="antecedentes" placeholder="Antecedentes personales patológicos"></textarea>
+                                    </div>
+                                    <div class="col-12 col-md-6">
+                                        <label for="alergias">Alergias</label>
+                                        <textarea class="border rounded border-white shadow-sm form-control p-2" rows="4" wrap="hard" name="alergias" placeholder="alergias"></textarea>
+                                    </div>
+                                    <div class="col-12">
+                                        <hr style="color: #060606;">
+                                    </div>
+                                    <div class="col-12">
+                                        <h4>Datos de contacto de emergencias</h4>
+                                    </div>
+                                    <div class="col-12 col-md-4">
+                                        <label for="contactoNombre">Nombre completo</label>
+                                        <input class="border rounded border-white shadow-sm form-control p-2 text-muted" type="text" name="contactoNombre" required placeholder="Nombre completo">
+                                    </div>
+                                    <div class="col-12 col-md-4">
+                                        <label for="contactoTelefono">Teléfono</label>
+                                        <input class="border rounded border-white shadow-sm form-control p-2 text-muted" type="text" name="contactoTelefono" required placeholder="Teléfono">
+                                    </div>
+                                    <div class="col-12 col-md-4">
+                                        <label for="contactoTelefono">Correo electrónico</label>
+                                        <input class="border rounded border-white shadow-sm form-control p-2 text-muted" type="text" name="contactoEmail" placeholder="Correo electrónico">
+                                    </div>
+                                    <div class="col-12">
+                                        <label for="contactoDireccion">Domicilio</label>
+                                        <input class="border rounded border-white shadow-sm form-control p-2 text-muted" type="text" name="contactoDireccion" required placeholder="Domicilio">
+                                    </div>
+                                    <div class="col-12 d-flex justify-content-center mt-4">
+                                        <button class="btn btn-outline-primary btn-submit" type="submit">Agregar</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <main style="position: absolute; bottom: 3rem; z-index: 10; width: 100%;">
+            <div class="container">
+                <div class="row d-flex justify-content-center">
+                    <div class="col col-12 col-md-4 text-center">
+                        <div id="mensaje"></div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </main>
+    <div id="menu-sidebar" class="sidebar"></div>
+    <script src="/assets/js/jquery.min.js"></script>
+    <script src="/assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="/assets/js/bootstrap-4-autocomplete.min.js"></script>
+    <script src="/assets/js/main.js"></script>
+    <script src="/assets/js/switch.js"></script>
+    <script src="/assets/js/sidebar.js"></script>
+    <script src="/assets/js/administrador/crearPaciente.js"></script>
+</body>
+
+</html>

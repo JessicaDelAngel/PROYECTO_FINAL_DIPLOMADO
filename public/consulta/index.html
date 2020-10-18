@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="es-MX">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>iDoctor</title>
+    <link rel="stylesheet" href="/assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700">
+    <link rel="stylesheet" href="/assets/fonts/fontawesome-all.min.css">
+    <link rel="stylesheet" href="/assets/fonts/font-awesome.min.css">
+    <link rel="stylesheet" href="/assets/css/Navigation-Clean.css">
+    <link rel="stylesheet" href="/assets/css/styles.css">
+</head>
+
+<body>
+    <!-- Start: Navigation Clean -->
+    <div>
+        <nav class="navbar navbar-light navbar-expand-md navigation-clean" style="background-color: #3598DB;">
+            <div class="container">
+                <a class="navbar-brand" href="#" style="color: #fafafa;">iDoctor</a>
+                <button class="navbar-toggler" data-toggle="collapse" data-target="#navcol-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="navbar-toggler-icon text-white-50"></span>
+                </button>
+                <div
+                    class="collapse navbar-collapse" id="navcol-1">
+                    <ul class="nav navbar-nav ml-auto">
+                        <li class="dropdown nav-item">
+                            <a class="dropdown-toggle nav-link" data-toggle="dropdown" aria-expanded="false" href="#">
+                                <img src="/assets/img/doctorhombre-final.png" width="32px">
+                            </a>
+                            <div class="dropdown-menu dropdown-menu-right" role="menu">
+                                <a class="dropdown-item" href="/mis-datos.html" role="presentation">Mis datos</a>
+                                <a class="dropdown-item" role="presentation" id="btn-cerrar-sesion">Cerrar sesión</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <!-- End: Navigation Clean -->
+    <main>
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <ol class="breadcrumb mb-0" style="background-color: rgba(255,255,255,0);">
+                        <li class="breadcrumb-item">
+                            <a href="/">
+                                <span><i class="fa fa-medkit fa-2x" style="color: #CD5070;"></i></span>
+                            </a>
+                        </li>
+                        <li class="breadcrumb-item text-uppercase d-inline-flex align-items-center">
+                            <a class="text-dark" style="text-decoration: none;" href="/consultas">
+                                <h4 class="mb-0">Mis consultas</h4><span></span>
+                            </a>
+                        </li>
+                        <li class="breadcrumb-item text-uppercase d-inline-flex align-items-center active">
+                            <a><h4 class="mb-0" id="nombre-paciente"></h4><span></span></a>
+                        </li>
+                    </ol>
+                    <div class="row my-0 mx-1 p-2 row-content">
+                        <div class="col d-none" id="paciente-container">
+                            <div class="row p-0 mb-2 datos-paciente">
+                                <div class="col-12 col-12 p-2 col-content" id="paciente">
+                                    <h4>Datos del paciente</h4>
+                                    <div class="row mx-0" id="datos-completos">
+                                        <div class="col-lg-6">
+                                            <div class="row">
+                                                <div class="col-4 col-lg-3 d-flex flex-column justify-content-center align-items-center align-content-center px-lg-0">
+                                                    <figure class="figure m-0"><img class="rounded-circle img-fluid figure-img" src="/assets/img/pacientehombre-final.png"></figure>
+                                                </div>
+                                                <div class="col-8 col-lg-9 d-flex flex-column justify-content-center">
+                                                    <h6>NOMBRE</h6>
+                                                    <p id="nombre-paciente"></p>
+                                                    <h6>EDAD</h6>
+                                                    <p id="edad-paciente"></p>
+                                                    <h6>CURP</h6>
+                                                    <p id="curp-paciente"></p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-3">
+                                            <h6>TELEFONO</h6>
+                                            <p id="telefono-paciente"></p>
+                                            <h6>DOMICILIO</h6>
+                                            <p id="domicilio-paciente"></p>
+                                            <h6>EMAIL</h6>
+                                            <p id="email-paciente"></p>
+                                        </div>
+                                        <div class="col-lg-3 pr-lg-0">
+                                            <h6>TIPO DE SANGRE</h6>
+                                            <p id="tiposangre-paciente"></p>
+                                            <h6>ALERGIAS</h6>
+                                            <p id="alergias-paciente"></p>
+                                            <h6>ANTECEDENTES</h6>
+                                            <p id="antecedentes-paciente"></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row p-0 mb-2 datos-paciente">
+                                <div class="col-12 col-content p-2">
+                                    <h4>Consulta</h4>
+                                    <p id="consulta-observaciones"></p>
+                                    <form id="form-comentarios-consulta">
+                                        <div class="form-row px-1">
+                                            <input type="text" name="comentario" class="form-control" required placeholder="Agregar un comentario a la consulta" type="text" style="height: 46px; padding-right: 48px;">
+                                            <button type="submit" class="btn btn-primary float-right" style="width: 43px; height: 46px; padding: 6px; right: 8px; z-index: 10; position: absolute;">
+                                                <i class="fa fa-send"></i>
+                                            </button>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                            <div class="row p-0 mb-2 datos-paciente">
+                                <div class="col-12 col-content p-2">
+                                    <h4>Historial clínico</h4>
+                                    <ul class="list-group" id="historial-paciente"></ul>
+                                </div>
+                            </div>
+                            <div class="row p-0 mb-2 datos-paciente">        
+                                <div class="col-12 col-content p-2">
+                                    <h4>Exámenes médicos</h4>
+                                    <ul class="list-group" id="examenes-paciente"></ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <main style="position: absolute; bottom: 3rem; z-index: 10; width: 100%;">
+            <div class="container">
+                <div class="row d-flex justify-content-center">
+                    <div class="col col-12 col-md-4 text-center">
+                        <div id="mensaje"></div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </main>
+    <div class="sidebar" id="menu-sidebar"></div>
+    <script src="/assets/js/jquery.min.js"></script>
+    <script src="/assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="/assets/js/bootstrap-4-autocomplete.min.js"></script>
+    <script src="/assets/js/main.js"></script>
+    <script src="/assets/js/switch.js"></script>
+    <script src="/assets/js/sidebar.js"></script>
+    <script src="/assets/js/consulta.js"></script>
+</body>
+
+</html>

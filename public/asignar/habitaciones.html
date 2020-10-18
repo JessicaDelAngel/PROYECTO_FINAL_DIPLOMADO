@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="es-MX">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>iDoctor</title>
+    <link rel="stylesheet" href="/assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700">
+    <link rel="stylesheet" href="/assets/fonts/fontawesome-all.min.css">
+    <link rel="stylesheet" href="/assets/fonts/font-awesome.min.css">
+    <link rel="stylesheet" href="/assets/css/Navigation-Clean.css">
+    <link rel="stylesheet" href="/assets/css/styles.css">
+</head>
+
+<body>
+    <!-- Start: Navigation Clean -->
+    <div>
+        <nav class="navbar navbar-light navbar-expand-md navigation-clean" style="background-color: #3598DB;">
+            <div class="container">
+                <a class="navbar-brand" href="/" style="color: #fafafa;">iDoctor</a>
+                <button class="navbar-toggler" data-toggle="collapse" data-target="#navcol-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="navbar-toggler-icon text-white-50"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navcol-1">
+                    <ul class="nav navbar-nav ml-auto">
+                        <li class="dropdown nav-item">
+                            <a class="dropdown-toggle nav-link" data-toggle="dropdown" aria-expanded="false">
+                                <img src="/assets/img/doctorhombre-final.png" width="32px">
+                            </a>
+                            <div class="dropdown-menu dropdown-menu-right" role="menu">
+                                <a class="dropdown-item" href="/mis-datos.html" role="presentation">Mis datos</a>
+                                <a class="dropdown-item" role="presentation" id="btn-cerrar-sesion">Cerrar sesión</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <!-- End: Navigation Clean -->
+
+    <main class="h-100">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <ol class="breadcrumb mb-0" style="background-color: rgba(255,255,255,0);">
+                        <li class="breadcrumb-item">
+                            <a href="/">
+                                <span>
+                                    <i class="fa fa-medkit fa-2x" style="color: #CD5070;"></i>
+                                </span>
+                            </a>
+                        </li>
+                        <li class="breadcrumb-item text-uppercase d-inline-flex align-items-center">
+                            <a href="/habitaciones" style="text-decoration: none;" class="text-dark">
+                                <h4 class="mb-0">Habitaciones<br></h4><span></span>
+                            </a>
+                        </li>
+                        <li class="breadcrumb-item text-uppercase d-inline-flex align-items-center active">
+                            <a>
+                                <h4 class="mb-0">Asignar habitaciones<br></h4><span></span>
+                            </a>
+                        </li>
+                    </ol>
+                    <div class="row my-0 mx-1 p-2 row-content">
+                        <div class="col p-2 col-content">
+                            <h4>Buscar usuario</h4>
+                            <form id="form-asignar-habitaciones">
+                                <div class="form-row">
+                                    <div class="col-md-6">
+                                        <label for="nombre">Nombre de usuario</label>
+                                        <input class="border rounded border-white shadow-sm form-control" type="search" name="nombre" placeholder="Nombre de usuario">
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="usuarioId">Id del usuario</label>
+                                        <input class="border rounded border-white shadow-sm form-control" type="search" name="usuarioId" placeholder="Id del usuario" required>
+                                    </div>
+                                    <div class="col-12">
+                                        <hr>
+                                    </div>
+                                    <div class="col-12">
+                                        <h4>Datos de habitaciones</h4>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label>Área</label>
+                                        <select id="select-areas" class="bg-white border rounded border-white shadow-sm form-control p-2" name="area" required>
+                                            <optgroup label="Selecciona un área">
+
+                                            </optgroup>
+                                        </select>
+                                    </div>
+                                    <div class="col col-md-6">
+                                        <label>Horario</label>
+                                        <div class="form-row">
+                                            <div class="col">
+                                                <div class="form-check d-inline-flex align-items-center">
+                                                    <input class="form-check-input my-0" type="radio" name="horario" value="vespertino" id="checkVespertino">
+                                                    <label class="form-check-label" for="checkVespertino">Vespertino</label>
+                                                </div>
+                                            </div>
+                                            <div class="col">
+                                                <div class="form-check d-inline-flex align-items-center">
+                                                    <input class="form-check-input my-0" type="radio" name="horario" value="matutino" id="checkMatutino">
+                                                    <label class="form-check-label" for="checkMatutino">Matutino</label>
+                                                </div>
+                                            </div>
+                                            <div class="col">
+                                                <div class="form-check d-inline-flex align-items-center">
+                                                    <input class="form-check-input my-0" type="radio" name="horario" value="nocturno" id="checkNocturno">
+                                                    <label class="form-check-label" for="checkNocturno">Nocturno</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 d-flex justify-content-center mt-4">
+                                        <button class="btn btn-outline-primary btn-submit" type="submit">Agregar</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <main style="position: absolute; bottom: 3rem; z-index: 10; width: 100%;">
+            <div class="container">
+                <div class="row d-flex justify-content-center">
+                    <div class="col col-12 col-md-4 text-center">
+                        <div id="mensaje"></div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </main>
+
+    <div id="menu-sidebar" class="sidebar"></div>
+    <script src="/assets/js/jquery.min.js"></script>
+    <script src="/assets/js/popper.min.js"></script>
+    <script src="/assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="/assets/js/bootstrap-4-autocomplete.min.js"></script>
+    <script src="/assets/js/main.js"></script>
+    <script src="/assets/js/switch.js"></script>
+    <script src="/assets/js/sidebar.js"></script>
+    <script src="/assets/js/administrador/asignarHabitaciones.js"></script>
+</body>
+
+</html>
