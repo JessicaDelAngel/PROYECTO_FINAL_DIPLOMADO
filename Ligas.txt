@@ -1,0 +1,14 @@
+*LIGA DEL VIDEO
+https://youtu.be/jqMHGBPT1vI
+
+*LIGA DEL SERVIDOR
+https://novamedik.herokuapp.com/ 
+
+*LIGA DE LA BASE DE DATOS INSTALADA
+https://remotemysql.com/#about
+
+*LIGA DEL GITHUB
+https://github.com/JessicaDelAngel/PROYECTO_FINAL_DIPLOMADO
+
+(Para abrir el proyecto, se requiere contar con el Node.js 
+instalado previamente en el dospositivo de computo)
